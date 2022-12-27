@@ -1,0 +1,40 @@
+{
+  "$schema":"https://aka.ms/sppnp-extract-configuration-schema",
+  "persistAssetFiles": true,
+  "handlers": [
+    "Lists",
+    "WebSettings",
+    "Pages",
+	"Files",
+	"Navigation"
+  ],
+  "lists": {
+    "lists": [
+      {
+        "title": "Documents",
+        "includeItems": true,
+        "query": {
+          "includeAttachments": true
+        }
+      },
+	  {
+        "title": "List1",
+        "includeItems": true,
+      },
+	  {
+        "title": "Countries",
+        "includeItems": true,
+      }	  
+
+    ]
+  },
+  "pages": {
+    "includeAllClientSidePages": true
+	"excludeAuthorInformation": true
+  },
+  "navigation": {
+	"removeExistingNodes": true
+  }, 
+  "persistAssetFiles": true
+  "siteSecurity": {"includeSiteGroups": false}
+}
